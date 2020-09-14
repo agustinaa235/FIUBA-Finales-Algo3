@@ -1,0 +1,17 @@
+*En la clase gaseosa se recibe una moneda que puede ser cotizada en pesos o dolares y esto no es una clase sino
+una enumerable, genrenado que se tenga que verfificar en esa clase dependiendo de que moneda se trata. esto rompe
+con varios principios de poo.
+
+    * uno de ellos es el de encapsulamiento, ya que la gaseosa en este odelo conoce sobre la cotizacion de la moneda
+    cuando no deveria saber eso, ella solo deberia devolver su precio y en bace a la oneda que le llega ella deberia
+    ser capaz de saber su propio valor cotizado.
+   *  A su vez rompe con el open close, ya que si hay mas monedas se van a tener que agregar muhos if en base a la
+   cotizacion de cada moneda. No se estaria aplicando el concento de que la clase deberia estar cerrada a la modificacion.
+   * Rompe con el de unica responsabilidad ya que ademas de devolver su costo tambien se encarga de ver cual es
+   la cotizacion de esa moneda y como "gaseosa" no deberia encargarse de eso.
+
+*El nombre de la test se llama pitufos, lo cual no tiene nada que ver con lo que se esta testenado, que son productos.
+A su vez el nombre de las test no te dice nada sobre lo que estas testeando lo cual implica que no estas haciendo un
+buen uso de nombres.
+Lo mismo en todo el codigo se usaron abreviaciones para l=distintas variables, tanto en las test como en el modelo en si
+generando poca claridad en el codigo y usando un mal uso de nombramiento de variables.

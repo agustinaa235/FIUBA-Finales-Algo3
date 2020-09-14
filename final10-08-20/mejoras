@@ -1,0 +1,4 @@
+* en las clase componente electrico hay muchos ifs, violando el principo de open close ya que cada vez que quiera agregar
+un nuevo componente electrico, deberia agregar u=oitro if
+* lo mismo sucede con el calculo de cada componente electrico se tiene que chear el tipo, esto no solo viola el open close
+sino tambien con el one responsability.
