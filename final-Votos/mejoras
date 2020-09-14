@@ -1,0 +1,7 @@
+* Viola el principio de open close cuando al votar recibe un string y dbe ir preguntando por cada partido
+de donde es el voto. Eso se deberia encaragar una clase que maneje de quien es el voto.
+*lo mismo cuando se quiere saber la cantidad de votos de cada partido, ahi la clase foolMatic viola con el concepto
+de unica responsabilidad ya que implemneta el calculo de votos, la cantidad y la diferencia, cuando eso deberia ir delegandose
+una forma seria que cada partido sepa sus votos.
+*hay dos mensajes que se llaman igual, eso genera poca claridad en el codigo ya que uno recibe solo el nombre del partido
+y el otro ademas del nombre, la cantidad.
