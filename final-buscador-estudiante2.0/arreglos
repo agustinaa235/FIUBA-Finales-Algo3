@@ -1,0 +1,12 @@
+ a. ¿Qué potenciales problemas de diseño encuentra en el código? Enumérelos explicando PARA CADA UNO de ellos
+	 porqué considera que representan un problema de diseño.
+
+    * Hay pocas pruebas y solo de buscador
+    * se rompe el encapsulamiento cuando se le pide al producto sus datos,
+
+    b. ¿Se viola algún(os) principio(s) de diseño? ¿Cual(es)?
+
+    * Se viola el open close.
+    * SE viola el principio de unica responsabilidad
+    * se viola el principio de inversicion de dependecian en la clase buscador cuando se guarda una lista de
+    productos que son concretos.

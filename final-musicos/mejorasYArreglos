@@ -1,0 +1,21 @@
+*Con Respecto a las pruebas, hay una unica prueba que testeada el comportamnieto del codigo en vez de hacerlo de forma aislada
+con lo cual si llega a fallar no se sabe en que parte del codigo puede estar fallando, asu vz el nombre de la prueba
+no es descriptivo por lo que si enciam falla a si a simple vista no se sabe donde esta el error en el codigo y esto onliga
+a que el progrmadador deba ponerle a ver en detalle lo que implemneta ese test.
+
+*A su vez la clase de los distitos musicos viola el principio de segregacion de interfaz ya que todos entiende el mensaje
+tocar pero si les llega un objeto que no saben tocar deben lanzar una excepcion, esto termina violando este principio
+ya que cada musico solo deberia implemnetar lo que sabe tocar.
+
+* Tambine se puede ver que se viola el principio de open close ya que cuando implemnetan el mensaje tocar, hay muchos ifs
+que van verificando de que instrumentro se trata por lo cual si a futuro se quiere tocar un instrumento nuevo se deberia
+agregar ptro if generando que el codigo ya escrito sea modificado en vez de solo escribir nuevo codigo. Tambien esto
+genera que se viole el encapsulamineto ya que siempre tene que preguntar de que isntrumento se trata para saber si lo
+puede tocar o no, cuando en si cada muscio ya sabe que sabe tocar y que no.
+
+*Tambien hace que la clase musicos tengan mucha responsabilidad xq por cada instrumento que tocan hace un implemnetacion
+distinta, esto se solucionaria si el instrumento en si tuviera algun comportamiento para poder delegarle, pero en el
+modelo simplemnete esta como una clase contenedora.
+
+*Hay clase de los instrumentos, pinao, charanrgo ect que tienen los atributos publicos generando asi que se viole el
+encapsulamiento;
