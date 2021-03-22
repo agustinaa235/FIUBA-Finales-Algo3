@@ -1,0 +1,19 @@
+1- a) Comentar Que cosas ve mal del codigo
+
+    * En la clase cabina de peaje el codigo de calcular el peaje esta escrito de forma mas estructuturada con muchos
+    ifs, con lo cual no es orientado a objetos.
+    * Se viola el encapsulamiento ya que debe preguntar de que transporte se tarta en vez de delegarle ese calculo
+    al mismo tranporte y no estaria resolviendo el problema polimorficamenete.
+    * tiene atributos booleanos, eso nos indica que es un bad smell y que se podria crear calses que modelen ese
+    atributo.
+    * No hay ninguna test, con lo cual no se sabe si el cosigo escrito funciona correctamente.
+   b) Que principios viola ?
+
+   * En la clase cabinaDePeaje se viola el principio de unica responsabilidad ya que al calcular el peaje
+   implemneta la logica de cada transporte por lo que tiene muchas razpnes de cambio.
+   *SE viola el principio de open close en la clase de de cabina de peaje ya que si a futuro se agrega otro transporte
+   o se tiene en cuenta otro factor ademas del telepase se deberian agregar otro if y mdicar el codigo ya escrito por
+   lo que no se cumpliria que el codigo sea cerrado a modificaciones.
+   * se viola el principio de segregacion de interfaz ya que la moto entiende el mensaje de instalar telepase
+   pero en si no deberia.
+

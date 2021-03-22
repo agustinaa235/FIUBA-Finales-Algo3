@@ -1,0 +1,19 @@
+* Un error en el modelo esta relacionadonado con las test, la clase ue testea al modelo se llama sistema test en la cual
+no indica sobre que se esta testeando. A su vez hay una unica test, cuyo nombre es pitufo que no tiene nada que ver
+con el modelo en si que no aporta sobre lo que se esta testeando y si llega a haber alguna falla no se sabria en que
+parte del codigo podria estar ya que su nombre no aclara que parte del codigo se esta testeando.
+LO mismos ucede al tener una sola prueba que testee todo adentro de ella ya que si falla algo no se sabra en que parte
+se encentra esa falla, lo mejor seria separar en distintas prubeas donde se aclare que parte del codigo esta siendo
+testeada y asi poder identificar los errores mas rapido y cumplir con el testeo de pruebas unitarias.
+
+*En la clase celda uno de los errores que se puede encontrar es el manjero de errores, por ejemplo cuando setea el peso
+si es menor que cero deberia lanzar una excepcion y no imprimir por pantalla el error en si.
+
+*El uso de de if preguntando si esa letra ya se contabilizo viola el principio de encapsulamiento, seria mejor que cada
+letra por dentro supiese si fue usada ono y en base a eso cumplir con su contrato, en vez de estar preguntando.
+
+*En la clase palabra se puede ver que posee atributos publicos lo cual no esta bueno ya que estariamos violando
+el encapsulamiento de la clase ya que visto desde afuera le usuario no necesita saber que atributos usa una clase, ya que estos
+pueden cambiar a futuro.
+
+* SE viola el principio de inversion de dependecia en la clase palabra cuando se guarda una clase concreta
