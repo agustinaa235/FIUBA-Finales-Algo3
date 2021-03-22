@@ -1,0 +1,9 @@
+* En la clase Alumno se viola el principio de open cloase al calcular la deuda ya que debe ir preguntando
+cuantos hermanos posee pero si a futuro se agrega otra condicion para calcular la deuda de un alumno se deberia
+agregar un if genrando que no se complua que el codigo este cerrado a modificaiones.
+
+*En la clase colegio se viola el principio de unica responsabilidad ya que ademas de anotar a los alumnos se encangar de calcular
+la deuda.
+
+*Hay cuatro Construstores en la clase alumno que posee el mismo nombre lo cual hace que sea muy confuso de seguir
+el codigo.

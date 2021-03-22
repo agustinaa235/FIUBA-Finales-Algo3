@@ -1,0 +1,8 @@
+* la clase nave especial tiene muchas responsabilidades generando que se viole el principio de unica respondabilidad, a
+* en la clase nave espacial se viola el principio de open close cuando se incoca al mensaje atacar ya que implemnetas muchos ifs
+en base al estado del camuflaje, lo cula si se desea agregar otro factor para atacar se deberia agregar otro if rompiendo con
+lo que una clase deb estar cerrado a modficiaciones. Estose solucionaria delegando ese comporamiento al camuflaje.
+* la clase propulso contiene todo mensajes que son getters, lo cual esto hace que se viole el encapsulamiento.
+*La clase canion no posee ningun responsabilidad.
+*La clase nave Espacial posee un atributo que es manejado con booleanos, esto es un bad smell y esos atributos se podrian
+modelar como clase separadas para poder delegarle comportamiento.

@@ -1,0 +1,17 @@
+* El modelo presenta dos test del tipo integarl, y ninguno del tipo unitario. Esto no presenta una cobertura suficente
+del codigo. La falta de test unitarios provoca que no se prueba el codigo en partes y si hubiese algun error seria
+muy dificl de encontrarlo. A su vez el nombre de las dos prubeas no es descriptivo porlo que tampos se sabria que estaria
+fallando en caso de no pasar el test, haciendo que el programado deba hacer un seguimiento del test para ver que parte
+del codigo esta siendo ejecutada.
+
+*La clase tineda online tiene muchas responsabilidades lo cual rompe con el el principio de unica responsabilidad.
+A su vez esta clase viola con el rpicipio de open close al calular el precio teniendo en cuanta los descuentos ya que
+tiene muchos if vericinado clada tipo de descuento, asu vez esto genera que se viole el encapsulamiento.Otro problema
+es que la clase cupon es un enumerable lo cual genera que no tenga comportamniento. Esto viene de la mano con lo mencionado
+anteorio mente ya que si esta clase tuviera comportambiento se le deriaria el calculo del descuento aplicado a la misma
+clase, asi no se viola el principio de open close.
+
+*La clase envio que es una clase abstracta deberia ser una interfaz ya que de ahi utilizan el metodo de recargo
+las clases enviointernacional y envio local que no compraten atributos.
+
+*El manejo de una excepcion en la clase tienda onlines esta mal manejado.

@@ -1,0 +1,6 @@
+* hay tres metodos con el mismo nombre alumno, donde uno es el contrctor y dos son mensajes aparte lo cual lleva a la
+confuncion, ya  que una es agregar al hermano y es confuncio. MAL USO DE NOMBRES EN LOS MENSAJES
+*al calcular la deuda hace un if para verificar si tiene hermanos, eso no cumple con el open close ya que
+si a futuro se agrega otra condicion se tendria que agregar otro if.
+* el tema de los descuentos los maneja el alumno y el colegio lo cual rompe con el principio de one responsability,
+deberia haber una entidad/clase que se encargue de manejar eso.
