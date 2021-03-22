@@ -1,0 +1,20 @@
+* Tanto ironman como thanos poseen comportamiento similares por lo que thanos deberia herendar de venger para
+evitar tener codigo repido, se puede cumplir con el ES UN ya que son dos personajes con "superpoderes" y se los
+prodia considerar como vengers a los dos, obviando que en la pelicula thanos en si no es un venger pero para el modelo
+propuesto se lo podria considerar como tal.
+
+*Con respecto a ironMan se lo deberia modelar a parte y tener una clase aparte para sus armaduras ya que como
+lo muestra el modelo actual queda mucho codigo repedito y se vericia en cada ironConArmaduraX si posee la armula para verificar
+con cuanto danio ataca generando que se viole el principio de open close.
+
+* A su vez se violaria el principio de unica responsabilidad ya que dentro de atacar en vez de delegar el calculo a
+la armadura se lo implemneta ahi mismo la logica que le corresponde a cada armadura, por lo que si cambia alguna de
+esas implemnetaciones esa clase tendria 3 razones de cambio en vez de una.
+
+*Por como esta elmodelo definio la clase onjeto venger con un solo mensaje, en teroia esto deberia ser una interfaz
+en java ya que no hay atrubutos compartidos, o sino en el caso de iron y thanos compraten el atributo de la vida
+ese deberia estar en la clase madre.
+
+*Hay un manejo de excepciones bastante feo en la cual no se entiende que excepcion quiere lanzar ya que esta no es
+descriptiva y a su vez imprime por consola lo cual es una mala practica para saber cuando algo no debe suceder.Ademas
+nunca se testean lo cual hace todavia mas dicil de enteder que sucede cuando lanza la excepcion.

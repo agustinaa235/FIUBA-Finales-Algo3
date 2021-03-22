@@ -1,0 +1,31 @@
+1) El modelo de dominio pertenece a la conocida historia del lobo y los 3 chanchitos. Lea y ejecute BosqueTest. Luego analice el modelo otorgado y conteste:
+
+	a) ¿Qué potenciales problemas de diseño encuentra en el codigo? Enumérelos explicando PARA CADA UNO de ellos porqué considera que representan un problema de diseño.
+
+	* Hay un unico test Que esz integral, esto genera un problema ya que si falla el test no se sabra que parte
+	espefica del codigo estaria fallando. A su vez el nombre no estaria siendo descriptivo en que esta testeando,
+    lo cual generaria que uno deba ir viendo a travez del codigo del test.
+
+    *El bosque tine mucha responsabilidad y asu vez tiene una raefencia a la casa actual, me pareceria mejor que
+    tenga una referencia a los chanchitos y estos sepan cuando imigrar de casa y no el bosque en si.
+
+    * Otro problema que veo es que en la clase bosque cuando se ataca a la casa de los chanchitos se le pide
+    la instancia para saber de que casa se trata. Nostros vimos en clase esto esta mal ya que estariamos violando
+    el encapsulamiento, lo mismo sucede con la heramienta con la que el lobo esta atacando, se le esta preguntado
+    el "tipo" de herramieno y ahi no se estaria cumpliendo con el tell dont ask
+
+    * Herramiena es un enumerable, lo cual hace que no se le pueda otrorgar comportamiento y poder delegar.
+
+    * la distintas casas de chanchito careceen de comportamiento, solo son clases contenedoras.
+	b) ¿Se viola algún(os) principio(s) de diseño ? ¿Cual(es)?
+
+	* SE viola el principio de unica responsabilidad en la clase bosque ya que esta implemneta losditintos
+	comportamientos de atacar en base a cada casa por lo que tiene mas de una razon de cambio.
+
+	* SE viola el principio de opne close ya que se va chequeando las distintas casas con las distintas herramientas
+	de ataque con ifs lo cual si a futuro se quiere agregar otra casa con distinto material o otra herramienta se
+	deberia agregar otro if generando que el codigo no sea cerrado a modificaciones.
+
+	*SE viola el Encapsulamiento ya que por cada casa que se tenia se bedia preguntar la isntancia y la herramienta
+	de la cual se trabataba, lo mismo sucede con los atributos de la casadel chanchito que son publicos
+	generando que no se cumpla con el encapsulamiento.
