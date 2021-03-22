@@ -1,0 +1,11 @@
+*Errores en el codigo:
+
+    *viola con el principio de open close, en la clase persona tiene muchos ifs por cada comida y por el tipo
+    de persona, ya que hace un chequeo si es celiaca, no celiaca y a futuro eso se tendria que modificar
+    ya que si la persona es hipertensa te tendria que agregar un if y asi sucesivamente, esto implicaria que ele codigo
+    esta abierto a la modificacion con lo que rompe con este principio.
+    * la persona posee un booleano sobre si es celiaca o no, en programacion orientado a o bjetos es un indicador
+    de que eso lo podemos modelar en una clase.
+    *tambien es raro que panadero celiaco herede de panadero ya que sigue siendo el mismo panadero que hace
+    dos panes distitos, seria mejor difenciar los distintos tipos de comida y no el panadero en si ya que el
+    puede hacer los dos.

@@ -1,0 +1,11 @@
+*violaprincipo de segregacion de interfaz
+        * esto siginifca que una claseno puede depender de  metodos que no utiliza, por ejemplo el avestrz
+        implemneta una mnesaje de volar, cuando en realidad no puede, lo misco con cantar
+        Con la clase de abel pintos sucede lo mismo, es una persona, no puede volvar pero sin embargo entiende el mensaje
+        volar lo cual vioal este principio.
+
+*se viola el principio de open - close en algunas clases cuando implemnetan el mensajecorre hace muchso
+ifs en base a que superficie esta, cuando esto debria ser cerrado a modificaciones el codigo en si pero abierto a extencion
+lo cual no sucede porque si yo quiero agregar otra superficie deberia agregar otro if, lo cual ya estaria
+rompiendo con este principio. A su vez no estaria encapsulado en la superficie, esusto se solucionaria teniendo una
+clase superficie donde se encasule el comportamnieto de correr.
